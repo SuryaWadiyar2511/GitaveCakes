@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title contenteditable="true">GitaVeni Cakes & Bakers - Handmade Custom Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    
+</head>
+<body contenteditable="true">
+    <header>
+        <img src="logo.png" alt="GitaVeni Logo" class="logo" contenteditable="true" />
+        <h1>Welcome to <span contenteditable="true">GitaVeni Cakes & Bakers</span></h1>
+        <p contenteditable="true">Delicious, handmade cakes baked with love for every celebration</p>
+        <a href="https://wa.me/91XXXXXXXXXX" class="order-btn" target="_blank">
+            <img src="watsapp.jpg" class="icon" alt="WhatsApp Icon" contenteditable="true" />
+            <span contenteditable="true">Order on WhatsApp</span>
+        </a>
+    </header>
+
+    <section class="video-section">
+        <video autoplay muted loop contenteditable="true">
+            <source src="MakingVedio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="products">
+        <h2 contenteditable="true">Our Bestsellers</h2>
+        <div class="product-grid" id="productGrid">
+            <div class="product" contenteditable="true">
+                <img src="product1.jpg" alt="Rose Cake" contenteditable="true">
+                <h3 contenteditable="true">Rose Cake</h3>
+                <p contenteditable="true">₹899 - Free Shipping</p>
+                <button onclick="addToCart('Rose Cake', 899)" contenteditable="true">Add to Cart</button>
+            </div>
+            <div class="product" contenteditable="true">
+                <img src="product2.jpg" alt="Chocolate Cake" contenteditable="true">
+                <h3 contenteditable="true">Chocolate Cake</h3>
+                <p contenteditable="true">₹550 - Free Shipping</p>
+                <button onclick="addToCart('Chocolate Cake', 550)" contenteditable="true">Add to Cart</button>
+            </div>
+            <div class="product" contenteditable="true">
+                <img src="product3.jpg" alt="Kalakand Cake" contenteditable="true">
+                <h3 contenteditable="true">Kalakand Cake</h3>
+                <p contenteditable="true">₹550 - Free Shipping</p>
+                <button onclick="addToCart('Kalakand Cake', 550)" contenteditable="true">Add to Cart</button>
+            </div>
+        </div>
+        <button onclick="addNewProduct()" contenteditable="true">Add New Product</button>
+    </section>
+
+    <section class="about">
+        <h2 contenteditable="true">About Us</h2>
+        <p contenteditable="true">We are passionate about creating the finest handmade cakes to elevate every celebration. Each cake is crafted with love and premium ingredients.</p>
+    </section>
+
+    <section class="location-section">
+        <h2 contenteditable="true">Our Location</h2>
+        <a href="https://goo.gl/maps/example" target="_blank">
+            <img src="map.png" class="icon" alt="Map Icon" contenteditable="true" />
+            <span contenteditable="true">View on Google Maps</span>
+        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100" height="100" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="payment-options">
+        <h2 contenteditable="true">Payment Options</h2>
+        <ul>
+            <li contenteditable="true">Credit/Debit Card</li>
+            <li contenteditable="true">UPI / Online Payments</li>
+            <li contenteditable="true">Cash on Delivery (COD)</li>
+        </ul>
+    </section>
+
+    <section class="cart">
+        <h2 contenteditable="true">Your Cart</h2>
+        <ul id="cartItems" contenteditable="true"></ul>
+        <p>Total: ₹<span id="cartTotal" contenteditable="true">0</span></p>
+    </section>
+
+    <footer>
+        <p contenteditable="true">Made with ❤️ by GitaVeni Cakes & Bakers | Email: gitavanicakes@example.com</p>
+    </footer>
+</body>
+</html>
